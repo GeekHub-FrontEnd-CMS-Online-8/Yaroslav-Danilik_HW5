@@ -16,6 +16,7 @@ article {
 
 aside {
     background-color: #f6f9f9;
+    height: 850px;
 }
 
 footer {
@@ -217,26 +218,33 @@ margin-left: 250px;
     grid-template-columns: 360px 360px 360px;
     grid-column-gap: 15px;
     grid-row-gap: 15px;
-    margin-bottom: 100px;
     margin-left: 228px;
+    margin-bottom: 50px;
 }
 
 .galleryHover {
-
-}
-
-.galleryHover:hover {
+    position: relative;
+    border-radius: 2px;
+  }
+  
+  .galleryHover:hover:after {
+    top: 0;
+    position: absolute;
+    content:"";
+    width: 360px;
+    height: 260px;
     border-radius: 2px;
     background-color: #15a4fa;
     opacity: 0.9;
-    width: 360px;
-}
+  }
+
 
 /*Forms*/
 
 .Form {
     background-image: url("img/Bgform.png");
     height: 700px;
+    margin-top: 0;
 }
 
 .FormShadow {
@@ -249,6 +257,7 @@ margin-left: 250px;
 color: #fff;
 padding-top:  74px;
 margin-bottom: 0;
+margin-top: 0;
 }
 
 .formP {
